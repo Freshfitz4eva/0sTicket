@@ -5,7 +5,7 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Installation</h1>
+<h1>0sTicket - Installation</h1>
 This outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 <h2>Environments and Technologies Used</h2>
@@ -16,7 +16,7 @@ This outlines the prerequisites and installation of the open-source help desk ti
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10</b>
 
 <h2>List of Prerequisites</h2>
 
@@ -43,7 +43,7 @@ Both Resoruce Group and Virtual Machine should be created in the same region. In
 </p>
 
 
-Now that the virtual machine has been created, copy the public IP address of the virtual machine and open the remote desktop. Here you will paste the public IP address and then enter your username and password from the previous step.
+the virtual machine has been created, copy the public IP address of the virtual machine and open the remote desktop. Here you will paste the public IP address and then enter your username and password from the previous step.
 </p>
 <br />
 <img width="804" alt="Screenshot 2024-08-25 at 1 47 01 PM" src="https://github.com/user-attachments/assets/f0b16658-8c07-472e-81e1-3cf6d86d57e4">
@@ -59,7 +59,7 @@ Now you have to Install and enable Internet Information Services(IIS). This is a
 <a href="https://imgur.com/Oy7oAJQ"><img src="https://i.imgur.com/Oy7oAJQ.png?1" title="source: imgur.com" /></a>
 </p>
 <p>
-This is the Installation File.
+the Installation File.
 </p>
 <br />
 
@@ -67,7 +67,8 @@ This is the Installation File.
 <a href="https://imgur.com/EjaT9Jf"><img src="https://i.imgur.com/EjaT9Jf.png?1" title="source: imgur.com" /></a>
 </p>
 <p>
-From the installation file download the PHP manager for IIS. 
+  
+installation file download the PHP manager for IIS. 
 In osTicket PHP is the back-end web programming language.
 </p>
 <br />
@@ -155,9 +156,8 @@ Now reload IIS. Select the vmosTicket and click restart.
 Download the osTicket from the Installation file folder. Extract and copy “upload” folder to c:\inetpub\wwwroot Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
 
 
-Now open another file explorer next to the first. Go to the download folder and copy the upload folder and paste it into c:\inetpub\wwwroot and let it install. Next, rename the folder to osTicket.
+open another file explorer next to the first. Go to the download folder and copy the upload folder and paste it into c:\inetpub\wwwroot and let it install. Next, rename the folder to osTicket.
 
-  
 
 </p>
 <br />
@@ -176,7 +176,7 @@ On the right click Browse*:80(http) in the top right of IIS Manager
 <a href="https://imgur.com/rp0fWBd"><img src="https://i.imgur.com/rp0fWBd.png" title="source: imgur.com" /></a>
 </p>
 <p>
-If you can see this page, it means the installational process is successful
+installational process is successfull
 
 </p>
 <br />
@@ -186,7 +186,7 @@ If you can see this page, it means the installational process is successful
 </p>
 <p>
 
-Go back to the IIS>sites>Default>osTicket. Double click the PHP manager>enable or disable extension to enable the following extensions.
+Back to the IIS>sites>Default>osTicket. Double click the PHP manager>enable or disable extension to enable the following extensions.
 
   
 Enable: php_imap.dll
@@ -226,22 +226,18 @@ Assign permission to ost-config.php, go to properties>security, and disable inhe
 
 </p>
 <br />
-
+<img width="542" alt="Screenshot 2024-08-26 at 10 07 24 AM" src="https://github.com/user-attachments/assets/d0e33b39-c971-4794-b705-5f81cc804c80">
 <p>
-<a href="https://imgur.com/PiUhjRz"><img src="https://i.imgur.com/PiUhjRz.png" title="source: imgur.com" /></a>
 </p>
 <p>
 
 Click continue in the osTicket browser to continue settings.
-  
-Name Helpdesk (Kenronishe Help Desk)
-  
-  
-Default email (receives an email from customers)kenronishe@helper.com
+
+use default Email
+
   
 Set the username and password for logging into OsTicket. 
 
-  
 </p>
 <br />
 
@@ -272,12 +268,11 @@ Create a new database called osTicket.
 Right-click to the unnamed>create new>database> name it osTicket.
 </p>
 <br />
-
+<img width="503" alt="Screenshot 2024-08-26 at 9 13 55 AM" src="https://github.com/user-attachments/assets/fc3acb06-3888-42ec-bdd9-c3013c0feb09">
 <p>
-<a href="https://imgur.com/lh9yjye"><img src="https://i.imgur.com/lh9yjye.png" title="source: imgur.com" /></a>
 </p>
 <p>
-Go to the osTicket page and type root in MYSQL username, Password1 in MYSQL Password, and osTicket in MYSQL Database and click to Install now.
+Go to the osTicket page and type root in MYSQL username, Password1 in MYSQL Password, and osTicket in MYSQL Database to Install now.
   
 </p>
 <br />
@@ -287,7 +282,7 @@ Go to the osTicket page and type root in MYSQL username, Password1 in MYSQL Pass
 </p>
 <p>
 
-Congratulations, your setup has been completed successfully!
+Setup has been completed 
   
 </p>
 <br />
@@ -301,8 +296,6 @@ Before we you finish there are some things that need cleaning up.
 
 We need to delete the setup folder. Go to C:\inetpub\wwwroot\osTicket\setup.
 
-  
-  
 </p>
 <br />
 
@@ -317,13 +310,11 @@ Go to C:\inetpub\wwwroot\osTicket\include\ost-config.php>properties>security>adv
   
 </p>
 <br />
-
+<img width="772" alt="Screenshot 2024-08-26 at 9 19 38 AM" src="https://github.com/user-attachments/assets/c96fe96d-16a5-4f0a-8e12-aa4cd278e014">
 <p>
-<a href="https://imgur.com/KQRFpn1"><img src="https://i.imgur.com/KQRFpn1.png" title="source: imgur.com" /></a>
 </p>
 <p>
-Now you can log in with your username and password. The configuration used: Username: Kenronishe and PW: Password1.
-</p>
+Now you can log in with your username and password.
 <br />
 
 <p>
